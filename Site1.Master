@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ASPmini.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <style>
+        h1{
+            text-align:center;
+            background-color:skyblue;
+            color:white;
+            width:100%;
+            height:50px;
+        }
+        nav{
+            background-color:black;
+            width:100%;
+            height:40px;
+        }
+        a{
+            color:white;
+            margin:5px;
+            padding:10px;
+        }
+        main{
+            width:80%;
+            height:400px;
+            background-color:gray;
+            margin:auto;
+            color:white;
+        }
+    </style>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <h1> LKM Bank</h1>
+            <nav>
+                <a href="CustomerDetails.aspx"> Customer Details</a>
+                <a href="AccountDetails.aspx"> Account Transaction</a>
+                <a href="RecurringDeposit.aspx"> Recurring Deposit</a>
+                <a href="FixedDeposit.aspx"> Fixed Deposit</a>
+                <a href="Statment.aspx"> Statement</a>
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
